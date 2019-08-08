@@ -1,9 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import "@testing-library/react/cleanup-after-each";
-
-import Display from "../components/Display";
 import Dashboard from '../components/Dashboard';
+
 describe('<Display />', () => {
     it('should render the balls and strikes for the at-bat player', () => {
         const atBat = render(<Dashboard />);

@@ -18,15 +18,17 @@ const Dashboard = () => {
             setStrikes(0);
         }
     }
+
     return (
         <div>
             <Display balls={balls} strikes={strikes} />
-            <button name='strike' onClick={baseballEventHandler}>Strike</button>
-            <button name='foul' onClick={baseballEventHandler}>Foul</button>
-            <button name='hit' onClick={baseballEventHandler}>Hit</button>
-            <button name='ball' onClick={baseballEventHandler}>Ball</button>
+            <button name='strike' onClick={baseballEventHandler} data-testid='strikebtn'>Strike</button>
+            <button name='foul' onClick={baseballEventHandler} data-testid='foulbtn'>Foul</button>
+            <button name='hit' onClick={baseballEventHandler} data-testid='hitbtn'>Hit</button>
+            <button name='ball' onClick={baseballEventHandler} data-testid='ballbtn'>Ball</button>
         </div>
     )
+
 }
 
 export default Dashboard;
